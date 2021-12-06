@@ -109,7 +109,7 @@ const Final = ({ values }) => {
             ></img>
           </div>
           <div style={{ textAlign: "center", width: "70%" }}>
-            <h4 style={{ fontSize: "28px", textAlign: "center" }}>
+            <h4 style={{ fontSize: "24px", textAlign: "center" }}>
               জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয়
             </h4>
             <p style={{ fontWeight: "500" }}>ত্রিশাল, ময়মনসিংহ</p>
@@ -118,7 +118,7 @@ const Final = ({ values }) => {
         </div>
 
         <div style={{ textAlign: "center" }}>
-          <h4 style={{ fontSize: "24px", textAlign: "center" }}>
+          <h4 style={{ fontSize: "22px", textAlign: "center" }}>
             (শিক্ষক পদের জন্য আবেদন ফর্ম)
           </h4>
           <h6 style={{ fontSize: "16px", textAlign: "center" }}>
@@ -126,7 +126,7 @@ const Final = ({ values }) => {
             জন্য
           </h6>
           <h4
-            style={{ fontSize: "28px", textAlign: "center", fontWeight: "500" }}
+            style={{ fontSize: "24px", textAlign: "center", fontWeight: "500" }}
           >
             আবেদন পত্র
           </h4>
@@ -141,12 +141,12 @@ const Final = ({ values }) => {
               marginBottom: "10px",
             }}
           >
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "30%" }}>
               <h6 style={{ marginBottom: "0px", fontSize: "16px" }}>
                 ০১ । নাম:
               </h6>
             </div>
-            <div style={{ width: "80%", paddingLeft: "10px" }}>
+            <div style={{ width: "70%", paddingLeft: "10px" }}>
               <p style={{ marginBottom: "0px", fontSize: "16px" }}>{name}</p>
             </div>
           </div>
@@ -158,12 +158,12 @@ const Final = ({ values }) => {
               marginBottom: "10px",
             }}
           >
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "30%" }}>
               <h6 style={{ marginBottom: "0px", fontSize: "16px" }}>
                 ০২ । পিতা/স্বামীর নাম:
               </h6>
             </div>
-            <div style={{ width: "80%", paddingLeft: "10px" }}>
+            <div style={{ width: "70%", paddingLeft: "10px" }}>
               <p style={{ marginBottom: "0px", fontSize: "16px" }}>{gurdian}</p>
             </div>
           </div>
@@ -175,12 +175,12 @@ const Final = ({ values }) => {
               marginBottom: "10px",
             }}
           >
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "30%" }}>
               <h6 style={{ marginBottom: "0px", fontSize: "16px" }}>
                 ০৩ । মাতার নাম:
               </h6>
             </div>
-            <div style={{ width: "80%", paddingLeft: "10px" }}>
+            <div style={{ width: "70%", paddingLeft: "10px" }}>
               <p style={{ marginBottom: "0px", fontSize: "16px" }}>
                 {motherName}
               </p>
@@ -195,12 +195,12 @@ const Final = ({ values }) => {
               marginBottom: "10px",
             }}
           >
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "30%" }}>
               <h6 style={{ marginBottom: "0px", fontSize: "16px" }}>
                 ০৪ । জন্ম তারিখ:
               </h6>
             </div>
-            <div style={{ width: "80%", paddingLeft: "10px" }}>
+            <div style={{ width: "70%", paddingLeft: "10px" }}>
               <p style={{ marginBottom: "0px", fontSize: "16px" }}>
                 {birthdate}
               </p>
@@ -499,12 +499,12 @@ const Final = ({ values }) => {
               marginBottom: "10px",
             }}
           >
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "30%" }}>
               <h6 style={{ marginBottom: "0px", fontSize: "16px" }}>
                 ০৭ । মোবাইল/ফোন নম্বর:
               </h6>
             </div>
-            <div style={{ width: "80%", paddingLeft: "10px" }}>
+            <div style={{ width: "70%", paddingLeft: "10px" }}>
               <p style={{ marginBottom: "0px", fontSize: "16px" }}>{mobile}</p>
             </div>
           </div>
@@ -517,12 +517,12 @@ const Final = ({ values }) => {
               marginBottom: "10px",
             }}
           >
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "30%" }}>
               <h6 style={{ marginBottom: "0px", fontSize: "16px" }}>
                 ০৮ । ই-মেইল:
               </h6>
             </div>
-            <div style={{ width: "80%", paddingLeft: "10px" }}>
+            <div style={{ width: "70%", paddingLeft: "10px" }}>
               <p style={{ marginBottom: "0px", fontSize: "16px" }}>{email}</p>
             </div>
           </div>
@@ -535,12 +535,12 @@ const Final = ({ values }) => {
               marginBottom: "10px",
             }}
           >
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "30%" }}>
               <h6 style={{ marginBottom: "0px", fontSize: "16px" }}>
                 ০৯ । বিবাহিত:
               </h6>
             </div>
-            <div style={{ width: "80%", paddingLeft: "10px" }}>
+            <div style={{ width: "70%", paddingLeft: "10px" }}>
               <p style={{ marginBottom: "0px", fontSize: "16px" }}>
                 {isMarried}
               </p>
@@ -555,12 +555,12 @@ const Final = ({ values }) => {
               marginBottom: "10px",
             }}
           >
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "30%" }}>
               <h6 style={{ marginBottom: "0px", fontSize: "16px" }}>
                 ১০ । জাতীয়তা:
               </h6>
             </div>
-            <div style={{ width: "80%", paddingLeft: "10px" }}>
+            <div style={{ width: "70%", paddingLeft: "10px" }}>
               <p style={{ marginBottom: "0px", fontSize: "16px" }}>
                 {nationality}
               </p>
@@ -575,12 +575,12 @@ const Final = ({ values }) => {
               marginBottom: "10px",
             }}
           >
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "30%" }}>
               <h6 style={{ marginBottom: "0px", fontSize: "16px" }}>
                 ১১ । ধর্ম:
               </h6>
             </div>
-            <div style={{ width: "80%", paddingLeft: "10px" }}>
+            <div style={{ width: "70%", paddingLeft: "10px" }}>
               <p style={{ marginBottom: "0px", fontSize: "16px" }}>
                 {religion}
               </p>

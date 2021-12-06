@@ -40,9 +40,89 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
 
   return (
     <div>
-      <Card style={{ marginTop: 100, backgroundColor:"rgba(0,0,0,.02)" }}>
+      <Card style={{ marginTop: 100, backgroundColor: "rgba(0,0,0,.02)" }}>
         <Card.Body>
           <Form onSubmit={submitFormData}>
+            <Form.Group className="mb-2">
+              <Row style={{ alignItems: "center" }}>
+                <Col md={{ span: 4 }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
+                    {" "}
+                    বিভাগের নাম:
+                  </Form.Label>
+                </Col>
+                <Col md={{ span: 8 }}>
+                  <Form.Select
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
+                    name="departmentName"
+                    defaultValue={values.firstName}
+                    type="text"
+                    placeholder=""
+                    onChange={handleFormData("departMentName")}
+                  >
+                    <option value="">--নির্বাচন করুন--</option>
+                    <option value="cse">Computer Science & Engineering</option>
+                  </Form.Select>
+                  {error ? (
+                    <Form.Text style={{ color: "red" }}>
+                      This is a required field
+                    </Form.Text>
+                  ) : (
+                    ""
+                  )}
+                </Col>
+              </Row>
+            </Form.Group>
+
+            <Form.Group className="mb-2">
+              <Row style={{ alignItems: "center" }}>
+                <Col md={{ span: 4 }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
+                    {" "}
+                   পদের নাম:
+                  </Form.Label>
+                </Col>
+                <Col md={{ span: 8 }}>
+                  <Form.Select
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
+                    name="postName"
+                    defaultValue={values.firstName}
+                    type="text"
+                    placeholder=""
+                    onChange={handleFormData("postName")}
+                  >
+                    <option value="">--নির্বাচন করুন--</option>
+                    <option value="assistentLecturer">শিক্ষক</option>
+                  </Form.Select>
+                  {error ? (
+                    <Form.Text style={{ color: "red" }}>
+                      This is a required field
+                    </Form.Text>
+                  ) : (
+                    ""
+                  )}
+                </Col>
+              </Row>
+            </Form.Group>
+
             <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
@@ -197,7 +277,7 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
                 textAlign: "left",
                 display: "block",
                 fontSize: "14px",
-                marginTop:"20px"
+                marginTop: "20px",
               }}
             >
               {" "}
@@ -599,7 +679,7 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
                     type="text"
                     onChange={handleFormData("isMarried")}
                   >
-                    <option value="">--Select---</option>
+                    <option value="">--নির্বাচন করুন--</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                   </Form.Select>
@@ -639,7 +719,7 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
                     type="text"
                     onChange={handleFormData("nationality")}
                   >
-                    <option value="">--Select---</option>
+                    <option value="">--নির্বাচন করুন--</option>
                     <option value="bangladeshi">Bangladeshi</option>
                     <option value="indian">Indian</option>
                   </Form.Select>
@@ -679,7 +759,7 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
                     type="text"
                     onChange={handleFormData("religion")}
                   >
-                    <option value="">--Select---</option>
+                    <option value="">--নির্বাচন করুন--</option>
                     <option value="islam">Islam</option>
                     <option value="hindu">Hindu</option>
                   </Form.Select>
