@@ -106,7 +106,49 @@ function App() {
     case 1:
       return (
         <div className="App">
-          <Container>
+          <div>
+            <div className="p-2" style={{ backgroundColor: "#623D63" }}>
+              <div className="row align-items-center">
+                <div className="col-md-3">
+                  <div className="d-flex justify-content-center">
+                    <img
+                      style={{ height: "70px" }}
+                      alt=""
+                      src="https://jkkniu.edu.bd/wp-content/themes/jkkniu/images/jkkniu/logo3.png"
+                    ></img>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="d-flex alignitems-center justify-content-center">
+                    <div>
+                      <h3
+                        style={{ fontWeight: "700", fontSize: "26px" }}
+                        className="text-center text-white"
+                      >
+                        জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয়
+                      </h3>
+                      <p
+                        style={{ fontSize: "14px", fontWeight: "500" }}
+                        className="text-center text-white"
+                      >
+                        ত্রিশাল, ময়মনসিংহ
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="d-flex justify-content-center">
+                    <img
+                      style={{ height: "70px" }}
+                      alt=""
+                      src="http://jkkniu.edu.bd/wp-content/uploads/mijib-year.png"
+                    ></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Container style={{ marginTop: "-80px" }}>
             <Row>
               <Col md={{ span: 8, offset: 2 }} className="custom-margin">
                 <StepOne
@@ -123,7 +165,49 @@ function App() {
     case 2:
       return (
         <div className="App">
-          <Container>
+          <div>
+            <div className="p-2" style={{ backgroundColor: "#623D63" }}>
+              <div className="row align-items-center">
+                <div className="col-md-3">
+                  <div className="d-flex justify-content-center">
+                    <img
+                      style={{ height: "70px" }}
+                      alt=""
+                      src="https://jkkniu.edu.bd/wp-content/themes/jkkniu/images/jkkniu/logo3.png"
+                    ></img>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="d-flex alignitems-center justify-content-center">
+                    <div>
+                      <h3
+                        style={{ fontWeight: "700", fontSize: "26px" }}
+                        className="text-center text-white"
+                      >
+                        জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয়
+                      </h3>
+                      <p
+                        style={{ fontSize: "14px", fontWeight: "500" }}
+                        className="text-center text-white"
+                      >
+                        ত্রিশাল, ময়মনসিংহ
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="d-flex justify-content-center">
+                    <img
+                      style={{ height: "70px" }}
+                      alt=""
+                      src="http://jkkniu.edu.bd/wp-content/uploads/mijib-year.png"
+                    ></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Container style={{ marginTop: "-80px" }}>
             <Row>
               <Col md={{ span: 8, offset: 2 }} className="custom-margin">
                 <StepTwo
@@ -141,13 +225,14 @@ function App() {
     case 3:
       return (
         <div className="App">
-          <Container>
+          <Final values={formData} />
+          {/* <Container>
             <Row>
               <Col md={{ span: 6, offset: 3 }} className="custom-margin">
-                <Final values={formData} />
+               
               </Col>
             </Row>
-          </Container>
+          </Container> */}
         </div>
       );
     // default case to show nothing

@@ -20,10 +20,10 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
   };
   return (
     <>
-      <Card style={{ marginTop: 100 }}>
+      <Card style={{ marginTop: 100, backgroundColor: "rgba(0,0,0,.02)" }}>
         <Card.Body>
           <Form onSubmit={submitFormData}>
-            <Table responsive bordered>
+            <Table style={{backgroundColor:"#fff"}} responsive bordered>
               <thead>
                 <tr style={{ verticalAlign: "top" }}>
                   <th style={{ fontSize: "12px" }}>স্কুল/কলেজ/বিশ্ববিদ্যালয়</th>
@@ -46,7 +46,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationInstitute1}
                       type="text"
                       onChange={handleFormData("educationInstitute1")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -56,7 +56,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.passedEducationYear1}
                       type="number"
                       onChange={handleFormData("passedEducationYear1")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -66,7 +66,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationExamName1}
                       type="text"
                       onChange={handleFormData("educationExamName1")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -76,7 +76,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationGrade1}
                       type="text"
                       onChange={handleFormData("educationGrade1")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -86,7 +86,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationYear1}
                       type="number"
                       onChange={handleFormData("educationYear1")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -96,7 +96,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.learnedTopic1}
                       type="text"
                       onChange={handleFormData("learnedTopic1")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -104,9 +104,9 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       class="form-control"
                       name="educationAttachment1"
                       defaultValue={values.educationAttachment1}
-                      type="text"
+                      type="file"
                       onChange={handleFormData("educationAttachment1")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                 </tr>
@@ -118,7 +118,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationInstitute2}
                       type="text"
                       onChange={handleFormData("educationInstitute2")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -128,7 +128,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.passedEducationYear2}
                       type="number"
                       onChange={handleFormData("passedEducationYear2")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -138,7 +138,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationExamName2}
                       type="text"
                       onChange={handleFormData("educationExamName2")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -148,7 +148,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationGrade2}
                       type="text"
                       onChange={handleFormData("educationGrade2")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -158,7 +158,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationYear2}
                       type="number"
                       onChange={handleFormData("educationYear2")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -168,7 +168,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.learnedTopic2}
                       type="text"
                       onChange={handleFormData("learnedTopic2")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -176,9 +176,9 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       class="form-control"
                       name="educationAttachment2"
                       defaultValue={values.educationAttachment2}
-                      type="text"
+                      type="file"
                       onChange={handleFormData("educationAttachment2")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                 </tr>
@@ -190,7 +190,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationInstitute3}
                       type="text"
                       onChange={handleFormData("educationInstitute3")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -200,7 +200,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.passedEducationYear3}
                       type="number"
                       onChange={handleFormData("passedEducationYear3")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -210,7 +210,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationExamName3}
                       type="text"
                       onChange={handleFormData("educationExamName3")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -220,7 +220,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationGrade3}
                       type="text"
                       onChange={handleFormData("educationGrade3")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -230,7 +230,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.educationYear3}
                       type="number"
                       onChange={handleFormData("educationYear3")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -240,7 +240,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       defaultValue={values.learnedTopic3}
                       type="text"
                       onChange={handleFormData("learnedTopic3")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                   <td>
@@ -248,19 +248,25 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                       class="form-control"
                       name="educationAttachment3"
                       defaultValue={values.educationAttachment3}
-                      type="text"
+                      type="file"
                       onChange={handleFormData("educationAttachment3")}
-                      style={{ border: "none" }}
+                      style={{ border: "none", padding: "3px" }}
                     ></input>
                   </td>
                 </tr>
               </tbody>
             </Table>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     কোনো বিশেষ প্রতিষ্ঠানে অধ্যয়ন ও বিশেষ বিষয়ে পাঠ গ্রহণ:
                   </Form.Label>
@@ -268,7 +274,10 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                 <Col md={{ span: 8 }}>
                   <Form.Control
                     as="textarea"
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="specialInstituteSubject"
                     defaultValue={values.specialInstituteSubject}
                     type="date"
@@ -288,7 +297,13 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
             <Form.Group className="mb-3">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     দক্ষতা অনুসারে ভাষা বিবরণ:
                   </Form.Label>
@@ -313,21 +328,37 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Label style={{ textAlign: "center", display: "block" }}>
+            <Form.Label
+              style={{
+                textAlign: "left",
+                display: "block",
+                fontSize: "14px",
+                marginTop: "20px",
+              }}
+            >
               {" "}
               প্রকাশিত প্রবন্ধ
             </Form.Label>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     i) প্রবন্ধের নাম:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="articleName"
                     defaultValue={values.articleName}
                     type="text"
@@ -340,14 +371,23 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
             <Form.Group className="mb-3">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     ii) প্রবন্ধ প্রকাশিত জার্নালের নাম:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="journalName"
                     defaultValue={values.journalName}
                     type="text"
@@ -360,14 +400,23 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
             <Form.Group className="mb-3">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     iii) প্রবন্ধের কপির সংযুক্তি:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="journalCopy"
                     defaultValue={values.journalCopy}
                     type="file"
@@ -377,21 +426,37 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Label style={{ textAlign: "center", display: "block" }}>
+            <Form.Label
+              style={{
+                textAlign: "left",
+                display: "block",
+                fontSize: "14px",
+                marginTop: "20px",
+              }}
+            >
               {" "}
               শিক্ষাদানের অভিজ্ঞতা
             </Form.Label>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     i) সরকারী/আধাসরকারী/স্বায়ত্বশাসিত প্রতিষ্ঠান:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="teachingInstitute"
                     defaultValue={values.teachingInstitute}
                     type="text"
@@ -401,17 +466,26 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     ii) মোট চাকুরিকাল:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="totalTenure"
                     defaultValue={values.totalTenure}
                     type="number"
@@ -424,14 +498,23 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
             <Form.Group className="mb-3">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     iii) বর্তমান পদ ( চাকুরিকাল, বেতন স্কেল, প্রতিষ্ঠান):
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="currentPosition"
                     defaultValue={values.currentPosition}
                     type="text"
@@ -444,7 +527,13 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
             <Form.Group className="mb-3">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     iv) সর্বমোট চাকুরিকাল:
                   </Form.Label>
@@ -455,15 +544,22 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                     defaultValue={values.allTotalTenure}
                     type="number"
                     onChange={handleFormData("allTotalTenure")}
+                    style={{ padding: "3px" }}
                   />
                 </Col>
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     v) যেসব ক্লাসে ও বিষয়ে অধ্যাপনা করা হয়েছে তার বিবরণ:
                   </Form.Label>
@@ -474,15 +570,20 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                     defaultValue={values.taughtSubjectDescription}
                     type="text"
                     onChange={handleFormData("taughtSubjectDescription")}
+                    style={{ padding: "3px" }}
                   />
                 </Col>
               </Row>
             </Form.Group>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
                   <Form.Label
-                    style={{ textAlign: "justify", display: "block" }}
+                    style={{
+                      textAlign: "justify",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
                   >
                     {" "}
                     কোনো বিশ্ববিদ্যালয়/শিক্ষা প্রতিষ্ঠান বা অন্য কোনো
@@ -496,15 +597,22 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                     defaultValue={values.forcedToWorkTime}
                     type="text"
                     onChange={handleFormData("forcedToWorkTime")}
+                    style={{ padding: "3px" }}
                   />
                 </Col>
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     চাকুরি গ্রহণে ইস্পিত বেতন:
                   </Form.Label>
@@ -513,23 +621,37 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                   <Form.Control
                     name="steelSalary"
                     defaultValue={values.steelSalary}
-                    type="file"
+                    type="number"
                     onChange={handleFormData("steelSalary")}
+                    style={{ padding: "3px" }}
                   />
                 </Col>
               </Row>
             </Form.Group>
 
-            <Form.Label style={{ textAlign: "center", display: "block" }}>
+            <Form.Label
+              style={{
+                textAlign: "center",
+                display: "block",
+                fontSize: "14px",
+                marginTop: "20px",
+              }}
+            >
               {" "}
               আপনার পরিচিত কিন্তু জন্মগত বা বৈবাহিক সূত্রে আত্নীয় নন এমন দুজন
               ব্যক্তির নাম ও ঠিকানা (মোবাই/ফোন নম্বর সহ) যাদের কাছ থেকে আপনার
               যোগ্যতা সম্বন্ধে তথ্য পাওয়া যাবে:
             </Form.Label>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     i) ব্যক্তি:
                   </Form.Label>
@@ -540,15 +662,22 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                     defaultValue={values.familierPerson1}
                     type="text"
                     onChange={handleFormData("familierPerson1")}
+                    style={{ padding: "3px" }}
                   />
                 </Col>
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     ii) ব্যক্তি:
                   </Form.Label>
@@ -559,6 +688,7 @@ const StepTwo = ({ nextStep, handleFormData, prevStep, values }) => {
                     defaultValue={values.familierPerson2}
                     type="text"
                     onChange={handleFormData("familierPerson2")}
+                    style={{ padding: "3px" }}
                   />
                 </Col>
               </Row>

@@ -40,24 +40,33 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
 
   return (
     <div>
-      <Card style={{ marginTop: 100 }}>
+      <Card style={{ marginTop: 100, backgroundColor:"rgba(0,0,0,.02)" }}>
         <Card.Body>
           <Form onSubmit={submitFormData}>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     নাম:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="name"
                     defaultValue={values.firstName}
                     type="text"
-                    placeholder="নাম"
+                    placeholder=""
                     onChange={handleFormData("name")}
                   />
                   {error ? (
@@ -71,21 +80,30 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     পিতা/স্বামীর নাম:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="gurdian"
                     defaultValue={values.firstName}
                     type="text"
-                    placeholder="পিতা/স্বামীর নাম"
+                    placeholder=""
                     onChange={handleFormData("gurdian")}
                   />
                   {error ? (
@@ -99,21 +117,30 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     মাতার নাম:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="motherName"
                     defaultValue={values.motherName}
                     type="text"
-                    placeholder=" মাতার নাম"
+                    placeholder=""
                     onChange={handleFormData("motherName")}
                   />
                   {error ? (
@@ -127,10 +154,16 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     জন্ম তারিখ:
                     <br></br>
@@ -139,7 +172,10 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="birthdate"
                     defaultValue={values.birthdate}
                     type="date"
@@ -156,21 +192,37 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Label style={{ textAlign: "center", display: "block" }}>
+            <Form.Label
+              style={{
+                textAlign: "left",
+                display: "block",
+                fontSize: "14px",
+                marginTop:"20px"
+              }}
+            >
               {" "}
               বর্তমান ঠিকানা
             </Form.Label>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     i) গ্রাম:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="presentVillage"
                     defaultValue={values.presentVillage}
                     type="text"
@@ -187,17 +239,26 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     ii) ডাকঘর:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="presentPostOffice"
                     defaultValue={values.presentPostOffice}
                     type="text"
@@ -214,17 +275,26 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     iii) উপজেলা:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="presentUpazilla"
                     defaultValue={values.presentUpazilla}
                     type="text"
@@ -241,17 +311,26 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     iv) জেলা:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="presentZilla"
                     defaultValue={values.presentZilla}
                     type="text"
@@ -268,21 +347,37 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Label style={{ textAlign: "center", display: "block" }}>
+            <Form.Label
+              style={{
+                textAlign: "left",
+                display: "block",
+                fontSize: "14px",
+                marginTop: "20px",
+              }}
+            >
               {" "}
               স্থায়ী ঠিকানা
             </Form.Label>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     i) গ্রাম:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="parmanentVillage"
                     defaultValue={values.parmanentVillage}
                     type="text"
@@ -299,17 +394,26 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     ii) ডাকঘর:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="parmanentPostOffice"
                     defaultValue={values.parmanentPostOffice}
                     type="text"
@@ -326,17 +430,26 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     iii) উপজেলা:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="parmanentUpazilla"
                     defaultValue={values.parmanentUpazilla}
                     type="text"
@@ -353,17 +466,26 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     iv) জেলা:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="parmanentZilla"
                     defaultValue={values.parmanentZilla}
                     type="text"
@@ -380,17 +502,26 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     মোবাইল/ফোন নম্বর:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="mobile"
                     defaultValue={values.mobile}
                     type="text"
@@ -407,17 +538,26 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     ই-মেইল:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Control
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="email"
                     defaultValue={values.email}
                     type="text"
@@ -437,14 +577,23 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
             <Form.Group className="mb-3">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     বিবাহিত:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Select
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="isMarried"
                     defaultValue={values.isMarried}
                     type="text"
@@ -465,17 +614,26 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     জাতীয়তা:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Select
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="nationality"
                     defaultValue={values.nationality}
                     type="text"
@@ -496,17 +654,26 @@ const StepOne = ({ nextStep, handleFormData, values }) => {
               </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Row style={{ alignItems: "center" }}>
                 <Col md={{ span: 4 }}>
-                  <Form.Label style={{ textAlign: "left", display: "block" }}>
+                  <Form.Label
+                    style={{
+                      textAlign: "left",
+                      display: "block",
+                      fontSize: "14px",
+                    }}
+                  >
                     {" "}
                     ধর্ম:
                   </Form.Label>
                 </Col>
                 <Col md={{ span: 8 }}>
                   <Form.Select
-                    style={{ border: error ? "2px solid red" : "" }}
+                    style={{
+                      border: error ? "2px solid red" : "",
+                      padding: "3px",
+                    }}
                     name="religion"
                     defaultValue={values.religion}
                     type="text"
